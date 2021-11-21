@@ -1,25 +1,37 @@
 ﻿using System;
 
-namespace ConsoleApp1
+namespace EmlakSitesiÖdevi
 {
     class Program
     {
         static void Main(string[] args)
-        {   
+        {
+            Kullanicilar kullanici1 = new Kullanicilar();
+            kullanici1.adsoyad = "EnesAslan";
+            Kullanicilar kullanici2 = new Kullanicilar();
+            kullanici2.adsoyad = "ElifYılmaz";
 
-            // Bilinçsiz Tür Dönüşümü
-            // Küçük tür büyük türe otomatik olarak dönüştürülür.
+            Ilanlar ilan1 = new Ilanlar();
+            ilan1.baslik = "kadıköykiralık";
+            ilan1.kullanici = kullanici1;
 
-            byte byteSayi = 58;
-            int intSayi = byteSayi;
+            Ilanlar ilan2 = new Ilanlar();
+            ilan2.baslik = "üsküdarkiralık";
+            ilan2.kullanici = kullanici1;
 
-            short shortSayi = 34;
-            long longSayi = shortSayi;
+            Ilanlar ilan3 = new Ilanlar();
+            ilan3.baslik = "maltepesatılık";
+            ilan3.kullanici = kullanici2;
 
-            float floatSayi = 29.45f;
-            double doubleSayi = floatSayi;
+            kullanici1.ilanlar.Add(ilan1);
+            kullanici1.ilanlar.Add(ilan2);
+            kullanici2.ilanlar.Add(ilan3);
 
-            Console.WriteLine("Sorunsuz Çalıştı.");
+            
+
+
+
+
 
 
         }
