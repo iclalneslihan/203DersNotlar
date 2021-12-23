@@ -1,0 +1,11 @@
+@media only screen and (max-width: 899px) {
+    .user-profile {
+    width: 11%;
+    background-color: #fff826;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    height: 100%;
+    float: left;
+    }
